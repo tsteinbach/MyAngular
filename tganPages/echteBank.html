@@ -1,6 +1,6 @@
 <div class="container">	
 			
-					<h3>Auswertung der Tendenz pro Saison und Benutzer</h3>	
+			<h3>Anzahl echter Banken pro Benutzer und Saison</h3>
 			
 			<form class="form-horizontal">
 				<div class="form-group">
@@ -15,28 +15,17 @@
 				    <input type="text" ng-model="Season">
 				  </div>
 				</div>
-				<div class="form-group">
-				  <label class="col-sm-2 control-label">Tendenz:</label>
-				  <div class="col-sm-10">
-				    <input type="text" ng-model="Tendenz">
-				  </div>
-				</div>
 			</form>
-		
-			
-	
 			
 					<table class="table table-striped">
 						<thead><tr>
 						    <th>Season</th>
 						    <th>User</th>
-						    <th>Tendenz</th>
 						    <th>Count</th>
 					  </tr></thead>
-					  <tbody><tr ng-repeat="x in names | filter:User | filter:Season | filter:Tendenz | orderBy:'Tendenz'">
+					  <tbody><tr ng-repeat="x in names | filter:User | filter:Season | orderBy:'Count'">
 					    <td>{{ x.Season }}</td>
 					    <td>{{ x.User }}</td>
-						<td>{{ x.Tendenz }}</td>
 					    <td>{{ x.Count }}</td>
 					  </tr></tbody>
 					</table>
