@@ -3,7 +3,7 @@
  */
 
 
-mod.controller("tganTendencyController", function tganTendencyController($scope,tganService) {
+tgan.controller("tganTendencyController", function tganTendencyController($scope,tganService) {
    "use strict";
 
 	tganService.getTendenzData().then(function (userData) {

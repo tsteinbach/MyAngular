@@ -16,6 +16,6 @@
       };
    }
 
-   angular.module("demo").service("tganService", tganService);
+   angular.module("tganStatistics").service("tganService", tganService);
 
 })();

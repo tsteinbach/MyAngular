@@ -1,10 +1,10 @@
 /**
  * @author Bieberbau
  */
-var mod = angular.module("demo", ['ngRoute']);
+var tgan = angular.module("tganStatistics", ['ngRoute']);
 
 // configure our routes
-	mod.config(function($routeProvider,$locationProvider) {
+	tgan.config(function($routeProvider,$locationProvider) {
 		$routeProvider
 
 			// route for the home page
