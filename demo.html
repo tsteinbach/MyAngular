@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularJS Demos</title>
+    <!--link rel=stylesheet href="bootstrap/css/bootstrap.css"-->
+    <!--link rel=stylesheet href="/demos/app.css"-->
+    <!--meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"-->
+</head>
+<!--style>[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}</style-->
+<body ng-app="demo">
+
+			
+			<div ng-controller="personController" ng-cloak>
+			
+				First Name: <input type="text" ng-model="firstName"><br>
+				Last Name: <input type="text" ng-model="lastName"><br>
+				<br>
+				Full Name: {{firstName + " " + lastName}}
+			
+			</div>
+			
+			<div ng-controller="customersController"> 
+
+				<table>
+				  <tr ng-repeat="x in names">
+				    <td>{{ x.Name }}</td>
+				    <td>{{ x.Country }}</td>
+				  </tr>
+				</table>
+
+
+			</div>
+			
+			<div ng-controller="addressController"> 
+
+				<ul>
+				  <li ng-repeat="x in names">
+				    {{ x.Name + ', ' + x.City + ', ' + x.Country }}
+				  </li>
+				</ul>
+
+			</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+<script src="Scripts/app.js"></script>
+<script src="Scripts/Controller/customersControllers.js"></script>
+<script src="Scripts/Controller/addressControllers.js"></script>
+<script src="Scripts/Controller/personControllers.js"></script>
+<script src="Scripts/service/addressService.js"></script>
+
+
+</body>
+</html>
