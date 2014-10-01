@@ -9,6 +9,12 @@ var tgan = angular.module("tganStatistics", ['ngRoute']);
 
 			// route for the tendency page
 			.when('/', {
+				templateUrl : 'tganPages/blank.html',
+				controller  : 'tganStartController'
+			})
+			
+			// route for the tendency page
+			.when('/tendency', {
 				templateUrl : 'tganPages/tendency.html',
 				controller  : 'tganTendencyController'
 			})
