@@ -8,6 +8,7 @@ tgan.directive("myExpander", function () {
          title: "@" // take the title from HTML attribute
       },
       transclude: true,
-      templateUrl: "tganPages/myExpanderTemplate.html"
+      templateUrl: "tganPages/directiveTemplates/myExpanderTemplate.html"
    }
 });
+

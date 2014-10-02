@@ -9,7 +9,7 @@ var tgan = angular.module("tganStatistics", ['ngRoute']);
 
 			// route for the start page
 			.when('/', {
-				templateUrl : 'tganPages/blank.html',
+				templateUrl : 'tganPages/start.html',
 				controller  : 'tganStartController'
 			})
 			
